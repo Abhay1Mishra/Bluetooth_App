@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="489dp"
+        android:layout_gravity="center"
+        android:id="@+id/fragl"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frame">
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.example.bluetooth.Fragment1"
+                >
+
+            </fragment>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="156dp"
+                android:layout_height="60dp"
+                android:id="@+id/bton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/shape"
+                android:elevation="5dp"
+                android:text="BLUETOOTH ON">
+
+            </Button>
+
+            <Button
+                android:layout_width="156dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/btoff"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape"
+                android:elevation="5dp"
+                android:text="BLUETOOTH OFF">
+
+            </Button>
+        </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
